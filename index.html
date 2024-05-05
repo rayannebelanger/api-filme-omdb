@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="arquivo.js"></script>
+    <title>Buscar Filme</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center px-6 py-12 bg-slate-800">
+    <div class="bg-white px-4 py-8 w-fit rounded-md">
+        <h1 class="text-2xl font-semibold mb-4">Buscar filme</h1>
+        <label>Digite o nome do filme: </label>
+        <div>
+            <input class="py-1 bg-slate-300 shadow-md" type="text" id="filme">
+            <button class="ml-2 mb-4 bg-indigo-600 text-white px-4 py-1.5 rounded-full text-sm font-semibold" onclick="consultarFilmes()">Consultar</button>
+        </div>
+        <div id="resultado">
+            <p>Busca encontrada:</p>
+        </div>
+    </div>
+
+</body>
+</html>
