@@ -1,7 +1,7 @@
 function consultarFilmes() {
     let filme = document.querySelector('#filme').value;
     let apiKey = 'daaadaa7';
-    let url =  `http://www.omdbapi.com/?t=${filme}&apikey=${apiKey}`;
+    let url =  `https://www.omdbapi.com/?t=${filme}&apikey=${apiKey}`;
 
     fetch(url).then(function(response){
         response.json().then(mostrarFilme)
